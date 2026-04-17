@@ -68,6 +68,15 @@ const PROPERTIES: Property[] = [
     description: "吉隆坡 KLCC 永久地契品牌住宅，SO/ Sofitel 進駐，77 樓無邊際泳池",
     tags: ["永久產權", "已完工拎包入住", "KLCC 雙子星地段"],
   },
+  {
+    id: "booking",
+    name: "CCPS Inspection Tour",
+    nameCn: "報名考察團",
+    baseUrl: "https://ccps-presentation-production.up.railway.app/b/mnuunqzn",
+    image: PATTERN_BG,
+    description: "直接報名 CCPS 考察團，親臨建案現場",
+    tags: ["專業導覽", "實地考察", "線上報名"],
+  },
 ];
 
 function generateLink(baseUrl: string, agentName: string, lineId: string, email?: string): string {
