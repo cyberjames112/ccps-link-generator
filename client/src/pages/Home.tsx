@@ -38,7 +38,8 @@ interface Property {
   tags: string[];
 }
 
-const OXLEY_IMG = "https://cyberjames112.github.io/oxley-so-sofitel/images/hero.jpg";
+// Served from public/images/ (resolves under Vite BASE_URL — works in dev and on GH Pages)
+const OXLEY_IMG = `${import.meta.env.BASE_URL}images/oxley-thumb.jpg`;
 
 const PROPERTIES: Property[] = [
   {
