@@ -15,6 +15,7 @@ import {
   Check,
   User,
   MessageCircle,
+  Building2,
   Sparkles,
   ChevronDown,
   Mail,
@@ -326,16 +327,18 @@ export default function Home() {
         {/* Header */}
         <header className="border-b border-[#1E2A45]/60">
           <div className="container py-4 flex items-center justify-between">
-            <div className="flex items-center gap-4">
-              <img
-                src={`${import.meta.env.BASE_URL}images/ccps-logo.svg`}
-                alt="CCPS 家慶佳業"
-                className="h-10 sm:h-12 w-auto"
-              />
-              <div className="hidden sm:block h-8 w-px bg-[#1E2A45]" />
-              <p className="hidden sm:block text-[#8B95A5] text-xs tracking-wider">
-                業務專屬連結生成器
-              </p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#D4A853] to-[#B8923A] flex items-center justify-center shadow-lg shadow-[#D4A853]/10">
+                <Building2 className="w-5 h-5 text-[#0B1120]" />
+              </div>
+              <div>
+                <h1 className="text-[#F5F0E8] text-base font-semibold tracking-wide">
+                  CCPS 家慶佳業
+                </h1>
+                <p className="text-[#8B95A5] text-xs tracking-wider">
+                  業務專屬連結生成器
+                </p>
+              </div>
             </div>
           </div>
         </header>
