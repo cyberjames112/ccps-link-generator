@@ -395,7 +395,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="max-w-xl mx-auto"
+              className="max-w-xl"
             >
               <form onSubmit={handleSubmit}>
                 <div className="glass-card rounded-2xl p-6 sm:p-8 space-y-6">
@@ -487,12 +487,11 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="text-center mb-10"
+                  className="mb-10"
                 >
-                  <div className="flex items-center justify-center gap-2 mb-3">
-                    <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#D4A853]/50" />
+                  <div className="flex items-center gap-2 mb-3">
                     <Sparkles className="w-4 h-4 text-[#D4A853]" />
-                    <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#D4A853]/50" />
+                    <div className="h-px w-12 bg-gradient-to-r from-[#D4A853]/50 to-transparent" />
                   </div>
                   <h2 className="font-serif text-3xl sm:text-4xl text-[#F5F0E8] tracking-wide">
                     您的專屬建案連結
@@ -505,7 +504,7 @@ export default function Home() {
                 </motion.div>
 
                 {/* Property Cards Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl">
                   {PROPERTIES.map((property, index) => (
                     <PropertyCard
                       key={property.id}
@@ -523,7 +522,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
-                  className="mt-12 max-w-3xl mx-auto"
+                  className="mt-12 max-w-3xl"
                 >
                   <div className="glass-card rounded-xl p-6">
                     <h3 className="text-[#D4A853] font-medium text-sm mb-3 flex items-center gap-2">
@@ -555,7 +554,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="py-8 border-t border-[#1E2A45]/40">
-          <div className="container text-center">
+          <div className="container">
             <p className="text-[#4A5568] text-xs tracking-wider">
               &copy; {new Date().getFullYear()} CCPS 家慶佳業. All rights reserved.
             </p>
