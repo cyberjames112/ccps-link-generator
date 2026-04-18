@@ -22,11 +22,13 @@ import {
   Info,
 } from "lucide-react";
 
-// CDN image URLs
+// Background art stays on CDN; building thumbs are served from public/images
+// via Vite BASE_URL so they work in dev (/) and on GH Pages (/ccps-link-generator/).
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663123178525/6UoSeyiBpge75ajqFvTqTL/hero-bg-KYX7F4hVrytB9VhNx7dqbf.webp";
-const GOLDEN_CROWN_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663123178525/6UoSeyiBpge75ajqFvTqTL/golden-crown-thumb-mXxPjKZGAAePhSpziG2R4K.webp";
-const PAPYRUS_NK_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663123178525/6UoSeyiBpge75ajqFvTqTL/papyrus-nk-thumb-7TRLmgAMFmDCpA2Ks7DW4C.webp";
 const PATTERN_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663123178525/6UoSeyiBpge75ajqFvTqTL/pattern-bg-SdwTmXNVFACZnS3CgzPZmh.webp";
+const GOLDEN_CROWN_IMG = `${import.meta.env.BASE_URL}images/golden-crown-thumb.jpg`;
+const PAPYRUS_NK_IMG = `${import.meta.env.BASE_URL}images/papyrus-thumb.jpg`;
+const OXLEY_IMG = `${import.meta.env.BASE_URL}images/oxley-thumb.jpg`;
 
 interface Property {
   id: string;
@@ -37,9 +39,6 @@ interface Property {
   description: string;
   tags: string[];
 }
-
-// Served from public/images/ (resolves under Vite BASE_URL — works in dev and on GH Pages)
-const OXLEY_IMG = `${import.meta.env.BASE_URL}images/oxley-thumb.jpg`;
 
 const PROPERTIES: Property[] = [
   {
