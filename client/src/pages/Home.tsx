@@ -63,7 +63,7 @@ const PROPERTIES: Property[] = [
     id: "oxley-so-sofitel",
     name: "Oxley Tower · SO/ Sofitel KL",
     nameCn: "Oxley Tower",
-    baseUrl: "https://cyberjames112.github.io/oxley-so-sofitel/",
+    baseUrl: "https://oxley-so-sofitel-production.up.railway.app/",
     image: OXLEY_IMG,
     description: "吉隆坡 KLCC 永久地契品牌住宅，SO/ Sofitel 進駐，77 樓無邊際泳池",
     tags: ["永久產權", "已完工拎包入住", "KLCC 雙子星地段"],
